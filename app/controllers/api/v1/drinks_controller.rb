@@ -6,7 +6,7 @@ module Api
       # GET /drinks
       def index
         @drinks = Drink.all
-        render json: @drinks
+        render json: @drinks, adapter: :json
       end
 
       # GET /drinks/1
